@@ -1,0 +1,6 @@
+I love Python.
+Pyhton is Easy.
+Python is Slow.
+Python is Interpreted.
+Python is used in Ai,
+Sometimes Python Can be confusing,
