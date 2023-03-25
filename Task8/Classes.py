@@ -101,5 +101,7 @@ admin = Admin("Hassan", "Ali")
 admin.privileges = ["can add post", "can delete post", "can ban user"]
 admin.show_privileges()
 
+sh = Admin("ALi" , "mirza")
+
 
 
