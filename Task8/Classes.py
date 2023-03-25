@@ -67,3 +67,39 @@ user.greetUser()
 user.increment_login_attempts()
 print(f"Total Login Attempts by User 1 : {user.login_attempts}")
 
+class IceCreamStand(Restaurant):
+    def __init__(self, restaurant_name, cuisine_type):
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = []
+    
+    def add_flavor(self, flavor):
+        self.flavors.append(flavor)
+    
+    def display_flavors(self):
+        print("Available flavors:")
+        for flavor in self.flavors:
+            print(f"- {flavor}")
+
+ice = IceCreamStand("Safillo" , "Turkish")
+ice.describe_restaurant()
+ice.open_restaurant()
+ice.add_flavor("Vanilla")
+ice.add_flavor("Chocolate")
+ice.display_flavors()
+
+class Admin(User):
+    def __init__(self, first_name, last_name):
+        super().__init__(first_name, last_name)
+        self.privileges = []
+    
+    def show_privileges(self):
+        print("Privileges:")
+        for privilege in self.privileges:
+            print(f"- {privilege}")
+
+admin = Admin("Hassan", "Ali")
+admin.privileges = ["can add post", "can delete post", "can ban user"]
+admin.show_privileges()
+
+
+
