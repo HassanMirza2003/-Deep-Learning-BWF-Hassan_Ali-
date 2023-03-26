@@ -1,3 +1,8 @@
+import time
+
+# start the timer
+start_time = time.time()
+
 fruits = {"banana" , "Apple" , "Guava"}
 print(fruits)
 
@@ -22,3 +27,8 @@ print(intersection)
 
 SymmDiffernce = animals.symmetric_difference(fruits)
 print(SymmDiffernce)
+
+
+end_time = time.time()
+elapsed_time = end_time - start_time
+print("Elapsed time:", elapsed_time, "seconds")
